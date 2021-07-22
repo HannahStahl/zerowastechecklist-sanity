@@ -22,6 +22,13 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: "Preview",
+      name: "preview",
+      type: "array",
+      of: [{ type: "block" }],
+      validation: Rule => Rule.required(),
+    },
+    {
       title: "Article",
       name: "article",
       type: "array",
