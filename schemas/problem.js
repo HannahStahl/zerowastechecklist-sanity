@@ -16,12 +16,6 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: "Display in Survey?",
-      name: "displayInSurvey",
-      type: "boolean",
-      validation: Rule => Rule.required(),
-    },
-    {
       title: "Assumed?",
       name: "assumed",
       type: "boolean",
@@ -35,7 +29,6 @@ export default {
     }
   ],
   initialValue: {
-    displayInSurvey: false,
     assumed: false,
   },
 };

@@ -13,14 +13,6 @@ export default {
       title: "Survey Header",
       name: "header",
       type: "string",
-      validation: Rule => Rule.custom(
-        (value, { document }) => (document.displayInSurvey && !value) ? "Required" : true
-      ),
-    },
-    {
-      title: "Display in Survey?",
-      name: "displayInSurvey",
-      type: "boolean",
       validation: Rule => Rule.required(),
     },
     {
@@ -43,7 +35,6 @@ export default {
     }
   ],
   initialValue: {
-    displayInSurvey: false,
     assumed: false,
   },
 };
