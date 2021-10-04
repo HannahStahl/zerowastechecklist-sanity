@@ -16,10 +16,19 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: "Low Waste?",
+      name: "lowWaste",
+      type: "boolean",
+      validation: Rule => Rule.required(),
+    },
+    {
       title: "Recommendations",
       name: "recommendations",
       type: "array",
       of: [{ type: "reference", to: [{ type: "recommendation" }] }],
     }
   ],
+  initialValue: {
+    lowWaste: false,
+  },
 };

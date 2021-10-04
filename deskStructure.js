@@ -12,7 +12,7 @@ export default () =>
             .title(title)
             .child(S.editor().schemaType(name).documentId(name).title(title));
         } else {
-          const pluralizedTitle = pluralize(title);
+          const pluralizedTitle = title === 'Category' ? 'Categories (All)' : pluralize(title);
           return S.listItem().title(pluralizedTitle).child(
             S.documentTypeList(name).title(pluralizedTitle)
           );
