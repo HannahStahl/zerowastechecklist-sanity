@@ -25,7 +25,7 @@ export default {
       title: "Solutions",
       name: "solutions",
       type: "array",
-      of: [{ type: "reference", to: [{ type: "solution" }] }],
+      of: [{ type: "solution" }],
     }
   ],
   initialValue: {

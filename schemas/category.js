@@ -25,13 +25,13 @@ export default {
       title: "Subcategories",
       name: "subcategories",
       type: "array",
-      of: [{ type: "reference", to: [{ type: "category" }] }],
+      of: [{ type: "category" }],
     },
     {
       title: "Problems",
       name: "problems",
       type: "array",
-      of: [{ type: "reference", to: [{ type: "problem" }] }],
+      of: [{ type: "problem" }],
     }
   ],
   initialValue: {

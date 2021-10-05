@@ -25,7 +25,7 @@ export default {
       title: "Recommendations",
       name: "recommendations",
       type: "array",
-      of: [{ type: "reference", to: [{ type: "recommendation" }] }],
+      of: [{ type: "recommendation" }],
     }
   ],
   initialValue: {
