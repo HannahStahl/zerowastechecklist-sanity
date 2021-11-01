@@ -25,14 +25,16 @@ export default {
       title: "Subcategories",
       name: "subcategories",
       type: "array",
-      of: [{ type: "category" }],
+      of: [{ type: "reference", to: [{ type: "category" }] }],
     },
     {
       title: "Problems",
       name: "problems",
+      description: "These will be sorted alphabetically on the website.",
       type: "array",
-      of: [{ type: "problem" }],
-    }
+      of: [{ type: "reference", to: [{ type: "problem" }] }],
+      options: { sortable: false },
+    },
   ],
   initialValue: {
     assumed: false,

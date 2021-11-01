@@ -24,9 +24,11 @@ export default {
     {
       title: "Recommendations",
       name: "recommendations",
+      description: "These will be sorted alphabetically on the website.",
       type: "array",
-      of: [{ type: "recommendation" }],
-    }
+      of: [{ type: "reference", to: [{ type: "recommendation" }] }],
+      options: { sortable: false },
+    },
   ],
   initialValue: {
     lowWaste: false,
