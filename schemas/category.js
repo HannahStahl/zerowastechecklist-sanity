@@ -19,9 +19,7 @@ export default {
       title: "Explanation",
       name: "explanation",
       type: "string",
-      validation: Rule => Rule.custom((explanation, { document }) => (
-        explanation || document.assumed ? true : 'Required'
-      )),
+      description: "Required for unassumed subcategories",
     },
     {
       title: "Assumed?",
