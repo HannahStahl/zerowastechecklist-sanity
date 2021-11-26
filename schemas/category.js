@@ -16,6 +16,14 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: "Explanation",
+      name: "explanation",
+      type: "string",
+      validation: Rule => Rule.custom((explanation, { document }) => (
+        explanation || document.assumed ? true : 'Required'
+      )),
+    },
+    {
       title: "Assumed?",
       name: "assumed",
       type: "boolean",
